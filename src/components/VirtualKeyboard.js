@@ -27,6 +27,40 @@ const VirtualKeyboard = ({ onKeyPress }) => {
           </Button>
         </Grid>
       ))}
+      
+      {/* Row for special buttons (Backspace, Space, Enter) */}
+      <Grid item xs={12} container justifyContent="center" spacing={2} sx={{ marginTop: '8px' }}>
+        <Grid item>
+          <Button 
+            variant="contained" 
+            color="secondary" 
+            onClick={() => onKeyPress("BACKSPACE")} 
+            sx={{ minWidth: '80px', minHeight: '40px', fontSize: '18px' }}
+          >
+            Backspace
+          </Button>
+        </Grid>
+        <Grid item>
+          <Button 
+            variant="contained" 
+            color="primary" 
+            onClick={() => onKeyPress("SPACE")} 
+            sx={{ minWidth: '80px', minHeight: '40px', fontSize: '18px' }}
+          >
+            Space
+          </Button>
+        </Grid>
+        <Grid item>
+          <Button 
+            variant="contained" 
+            color="primary" 
+            onClick={() => onKeyPress("ENTER")} 
+            sx={{ minWidth: '80px', minHeight: '40px', fontSize: '18px' }}
+          >
+            Enter
+          </Button>
+        </Grid>
+      </Grid>
     </Grid>
   );
 };

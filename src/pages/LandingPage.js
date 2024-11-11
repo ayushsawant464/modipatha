@@ -153,7 +153,7 @@ function LandingPage() {
             mx: 1,
           }}
         >
-          Draw
+          Write
         </Button>
       </Link>
 
@@ -168,11 +168,11 @@ function LandingPage() {
             mx: 1,
           }}
         >
-          Translate
+          Transliterate
         </Button>
       </Link>
 
-      <Link to="/faq" style={{ textDecoration: 'none' }}>
+      <Link to="/blog" style={{ textDecoration: 'none' }}>
         <Button
           sx={{
             color: 'primary.main',
@@ -183,7 +183,7 @@ function LandingPage() {
             mx: 1,
           }}
         >
-          FAQ
+          About Modi
         </Button>
       </Link>
     </Box>
@@ -226,7 +226,7 @@ function LandingPage() {
               Explore, Convert, and Learn Modi Script
             </Typography>
             <Typography variant="h5" align="center" paragraph>
-              Discover the beauty of Modi script through our advanced tools. Type, draw, translate, and delve into the rich history of this ancient writing system.
+              Discover the beauty of Modi script through our advanced tools. Type, draw, transliterate, and delve into the rich history of this ancient writing system.
             </Typography>
             <Box sx={{ mt: 4, display: 'flex', justifyContent: 'center' }}>
               {/* <Button variant="contained" sx={{ mr: 2, bgcolor: 'background.default', color: 'primary.main', '&:hover': { bgcolor: 'primary.main', color: 'background.default' } }}>
@@ -259,8 +259,8 @@ function LandingPage() {
             link: '/canvas', 
           },
           { 
-            title: 'Instant Translation', 
-            description: 'Get real-time translations between Modi and various scripts.', 
+            title: 'Instant Transliteration', 
+            description: 'Get real-time transliteration between Modi and various scripts.', 
             icon: <TranslateIcon />,
             link: '/translate', 
           },
@@ -268,7 +268,7 @@ function LandingPage() {
             title: 'Modi Script Info', 
             description: 'Learn about the history and usage of Modi script.', 
             icon: <InfoIcon />,
-            link: '/modi-script-info', 
+            link: '/blog', 
           },
         ].map((feature, index) => (
           <Grid item key={index} xs={12} sm={6} md={3}>
