@@ -8,7 +8,7 @@ CORS(app)
 # Endpoint to handle the transliteration
 @app.route('/')
 def home():
-    return "Hello, World!"  # You can replace this with any content you'd like
+    return "Server has started!"  # testing if server ha started or not
 
 
 @app.route('/api/convert', methods=['POST'])
