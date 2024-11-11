@@ -11,19 +11,19 @@ const Navbar = () => {
           ModiPatha
         </Typography>
         <Box>
-          <Button color="inherit" component={Link} to="/" startIcon={<HomeIcon />}>
+          <Button color="inherit" component={Link} to="/" startIcon={<HomeIcon />} data-testid="home-navbar-button">
             Home
           </Button>
-          <Button color="inherit" component={Link} to="/translate">
+          <Button color="inherit" component={Link} to="/translate" data-testid="translate-navbar-button">
             Transliterate
           </Button>
-          <Button color="inherit" component={Link} to="/canvas">
+          <Button color="inherit" component={Link} to="/canvas" data-testid="canvas--navbar-button">
             Write
           </Button>
-          <Button color="inherit" component={Link} to="/typeModi">
+          <Button color="inherit" component={Link} to="/typeModi" data-testid="type-navbar-button">
             Type 
           </Button>
-          <Button color="inherit" component={Link} to="/blog">
+          <Button color="inherit" component={Link} to="/blog" data-testid="blog-navbar-button">
             Blog
           </Button>
         </Box>
