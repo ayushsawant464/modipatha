@@ -65,3 +65,10 @@ Improve the transliteration feature using machine learning models to enhance acc
 ## UI Improvements
 
 Revamp the user interface (UI) to create a more modern, user-friendly, and intuitive experience. Focus on accessibility, performance, and design enhancements to ensure smoother interactions and ease of use for all users.
+
+## Load testing using JMeter
+
+Run app.py on 3 servers (for eg: python app.py <port number>)
+Run proxy_server.py (python proxy_server.py)
+Configure apache jmeter and load test /api/convert endpoint
+Results are displayed in backend/load-testing-results
